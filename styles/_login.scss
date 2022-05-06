@@ -1,0 +1,40 @@
+.login-container{
+    width: 100%;
+    form{
+        width: 400px;
+        margin:30px auto;
+        text-align: center;
+        padding: 1rem;
+        border-radius: 10px;
+        box-shadow: 5px 5px 5px  10px $gray;
+    }
+}
+.form-section{
+    width: 100%;
+    input{
+        width: 100%;
+        height: 50px;
+        border-radius: 10px;
+        margin-bottom: 20px;
+        font-size:1.1rem;
+        padding-left: 10px;
+        border: 1px solid $grey;
+        outline: none;
+    }
+}
+.form-button{
+    width: 100%;
+    button{
+        width: 100%;
+        height: 50px;
+        border-radius: 10px;
+        font-size:1.3rem;
+        outline: none;
+        border: none;
+        color: $white;
+        background: $blue;
+    }
+    span{
+        cursor: pointer;
+    }
+}
