@@ -25,6 +25,7 @@ function Posts({ posts }) {
         <FaHeart className="icon-pink" />
         <FaSmileBeam className="icon-yellow" />
         {posts.likes}
+        1000likes, 100 shares
         <div className="post-foot-comment">
           <ul>
             <li>
