@@ -35,7 +35,7 @@ function Posts({ posts }) {
               <FaComment className="icon-blue" /> Comment
             </li>
             <li>
-              <FaShare className="icon-blue" /> Share
+              <FaShare className="icon-blue" /> Share this
             </li>
           </ul>
         </div>
