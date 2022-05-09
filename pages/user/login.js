@@ -1,15 +1,18 @@
 import React, { useState } from "react";
 import Link from "next/link";
+import {useAuth} from "../../context/AuthContext"
 
 
 function Login() {
   const [userEmail, setUserEmail] = useState("");
   const [password, setPassword] = useState("");
 
+  const {user, login} = useAuth();
   
 
   const handleSubmit = async () => {
    console.log("login")
+   await login();
   };
   return (
     <div className="login-container">
