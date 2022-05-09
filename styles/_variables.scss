@@ -4,8 +4,13 @@ $grey: #65676B;
 $white: #FFFFFF;
 $background: #E4E6EB;
 $gray: #F0F2F5;
+$pink: rgb(237, 24, 120);
+$yellow: rgb(235, 184, 18);
 
-
+@mixin icon($color){
+    font-size: 2rem;
+    color: $color;
+}
 //popular
 .logo-blue{
     font-size: 3rem;
@@ -14,4 +19,23 @@ $gray: #F0F2F5;
 .logo-grey{
     font-size: 2rem;
     color: $grey;
+}
+.icon-pink{
+    @include icon($pink)
+}
+.icon-blue{
+    @include icon($blue)
+}
+.icon-yellow{
+    @include icon($yellow)
+}
+.button-blue{    
+        width: 70px;
+        height: 30px;
+        border-radius:10px;
+        border: none;
+        outline: none;
+        background: $blue;
+        color:white;
+        cursor: pointer;           
 }

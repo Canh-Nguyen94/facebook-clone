@@ -1,0 +1,52 @@
+@mixin flex-ul(){
+    ul{
+        list-style-type: none;
+        display:flex;
+        justify-content: space-around;
+        align-items: center;
+        li{
+            display:block; 
+            cursor: pointer;  
+        }
+    }
+}
+.feed{
+    width: 100%;
+    border-radius: 10px;
+    background: $white;
+    margin-top: 15px;
+    padding:10px 5px;
+}
+
+.avatar{
+    width:50px;
+    height:50px;
+    border-radius:50%;
+    background: $gray;
+}
+.post-text{
+    text-align:right;
+    border-bottom: 1px solid $gray;
+    textarea{
+        width: calc(100% - 51px);
+        border-radius: 10px;
+        border: none;
+        outline:none;
+        background: $gray;
+        padding: 10px;
+    }
+    
+}
+.post-head{
+    border-bottom: 1px solid $grey;
+}
+.post-picture{
+    border-bottom: 1px solid $grey;    
+}
+.post-image{
+    @include flex-ul();
+}
+.post-foot-comment{
+    @include flex-ul();
+    border-top: 1px solid $grey;
+}

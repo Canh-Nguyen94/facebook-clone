@@ -25,7 +25,7 @@ export default function Home() {
         <link rel="icon" href="/facebook.svg" />
       </Head>
 
-      <Box sx={{ width: "100%", padding: "20px" }}>
+      <Box sx={{ width: "100%", padding: "20px", background: "#F0F2F5" }}>
         <Grid container columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
           <Grid
             item
@@ -37,7 +37,7 @@ export default function Home() {
             <Item><LeftBar/></Item>
           </Grid>
           <Grid item xs={12} md={8} lg={5}>
-            <Item><Feed /></Item>
+            <Feed />
           </Grid>
           <Grid
             item

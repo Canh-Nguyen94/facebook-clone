@@ -24,8 +24,8 @@ function Header() {
           placeholder="Search on facebook"
           required
         />
-        <label className="logo-input" for="input"></label>
-        <label className="logo-blue" for="input">
+        <label className="logo-input" htmlFor="input"></label>
+        <label className="logo-blue" htmlFor="input">
           <FaFacebook />
         </label>
       </div>
