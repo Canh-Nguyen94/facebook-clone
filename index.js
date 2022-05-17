@@ -14,6 +14,7 @@ mongoose.connect(process.env.MONGO_URL, { useNewUrlParser: true }, () => {
 });
 
 //some changes
+//some fixes
 //middleware
 app.use(express.json());
 app.use(helmet());
