@@ -1,18 +1,20 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import {useAuth} from "../../context/AuthContext"
+import { useRouter } from "next/router";
 
 
 function Login() {
   const [userEmail, setUserEmail] = useState("");
   const [password, setPassword] = useState("");
-
+const router = useRouter();
   const {user, login} = useAuth();
-  
+  if(user) {
+    console.log("has user")
+    router.push("localhost:3000")}
 
   const handleSubmit = async () => {
-   console.log("login")
-   await login();
+    login(userEmail,password);
   };
   return (
     <div className="login-container">
