@@ -10,7 +10,7 @@ function AuthContextProvider({children}) {
     
     const login = async(email,password) => {
       const res = await axios.post("auth/login", { email, password})
-      console.log("responseabcd", res.data.username)
+      console.log("response123", res.data.username)
       setUser(res.data)
     }
   return (
